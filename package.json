@@ -1,5 +1,5 @@
 {
   "name": "blog",
-  "private": false,
+  "private": true,
   "dependencies": {}
 }
