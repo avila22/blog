@@ -1,4 +1,4 @@
-class BienvenidosController < ApplicationController::Base
+class BienvenidosController < ActionController
   def index
   end
 end
