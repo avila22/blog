@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'bienvenido/index'
+  get 'articulos/index'
 
 Rails.application.routes.draw do
  
@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :comentarios
 end
  
-  root 'bienvenido#index'
+  root 'articulos#index'
 end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'bienvenido#index'
