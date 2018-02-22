@@ -1,3 +1,3 @@
-<h1>¡BIENVENIDOS PERROS!</h1>
-
-
+class ApplicationController < ActionController::Base
+  def index 
+end
