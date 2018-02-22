@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20180222000327) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "articulos", force: :cascade do |t|
     t.string "titular"
     t.text "contenido"
@@ -22,10 +25,11 @@ ActiveRecord::Schema.define(version: 20180222000327) do
   create_table "comentarios", force: :cascade do |t|
     t.string "comentarista"
     t.text "contenido"
-    t.integer "articulo_id"
+    t.bigint "articulo_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["articulo_id"], name: "index_comentarios_on_articulo_id"
   end
 
+  add_foreign_key "comentarios", "articulos"
 end
